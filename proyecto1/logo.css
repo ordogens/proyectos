@@ -6,13 +6,34 @@
 
 
 body{
-    /* border-radius: 2rem; */
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
     display: flex;
     flex-direction: column;
     align-content: center;
     width: 100vw; 
     height: 100vh; 
+    justify-content: flex-end;
 
+
+
+}
+
+header{
+    display: flex;
+    /* background-color: blue; */
+    width: 30%;
+    height: 10%;
+    align-items: center;
+    
+}
+#msn{
+    font-size: 2.3rem;
+    height: 3.2rem;
+    margin-right: .6rem;
+    /* background-color: red; */
+    
+    
 }
 
 main {
@@ -54,6 +75,12 @@ form{
         display: flex;
         flex-direction: column;
     }
+
+    
+}
+
+input {
+    outline: none;
 }
 
 .fn {
@@ -74,4 +101,9 @@ form{
 
 button {
     margin: 1rem;
+    padding: 5px;
+    width: 6rem;
+    border-radius: 3px;
+    background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
 }
