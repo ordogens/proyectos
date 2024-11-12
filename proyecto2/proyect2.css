@@ -5,153 +5,158 @@
 }
 
 body{
-    font-size: small;
-    width: 100%;
-    height: 100vh;
-    /* border: 3px solid #000; */
-    margin-right: 30rem;
     display: flex;
-    justify-content: center;
+    width: 100%;
+    height: 100%;
     flex-direction: column;
 }
+
 header{
-    height: 33.33%;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    border-left: 1px solid #000;
-    border-right: 1px solid #000;
-}
-
-main{
-    height: 33.33%;
-    width: 100%;
     border: 1px solid #000;
-    display: flex;
-    flex-direction: row;
-    /* background-color: blueviolet; */
-    justify-content: space-between;
-}
-
-section {
-    width: 100%;
+    height: 30%;
     
-    display: flex;
-
-}
-
-div {
-    display: flex;
-    flex-direction: column;
-}
-
-/* section > article > div {
-     
-} */
-aside {
-    width: 20%;
-    border: 1px solid #000;
-
-}
-article{
-width: 100%;
-border-left: 1px solid #000;
-
-}
-
-footer{
-    height: 33.33%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    /* flex-direction: column; */
-    /* gap:1rem; */
 }
 
 nav{
     display: flex;
+    justify-content: flex-end;
     justify-content: space-between;
-    width: 100%;
-    margin-top: 5px;
-    padding-right: 1.3rem;
-}
+    
 
-h1{
-    font-size: 2rem;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-}
-
-h4 {
-    text-align: center;
-
-}
-
-ol > li {
-    border: 1px solid #000;
-}
-
-li{
-    list-style: none;
-}
-.a, .b {
-    border: none;
+    p{
+        font-size: 1.4rem;
+    }
+    ul{
+        display: flex;
+        
+        li{
+            list-style: none;
+            padding: .3rem;
+        }
+    }
 }
 
 #portada{
-    padding-top: 4rem;
+    display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
+    padding: 3rem;
+    
+    h1{
+        font-size: 3rem;
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+
+    #subT{
+        color: rgb(187, 172, 172)
+    
+    }
     
 }
-#unorder{
+
+main{
     display: flex;
     justify-content: space-between;
-}
-
-#subT{
-    color: gray;
-}
-
-
-#work{
-    border-top: 1px solid #000;
-    padding-top: 1rem;
-}
-
-#nombre{
-    font-size: 1.3rem;
-}
-#r ,#t, #x{
-    border:3px solid #000;
-    justify-content: center;
-    border-radius: 1rem;
-    display: flex;
-    align-self: center;
-    padding: 2.5rem;
-    text-align: center;
-    width: 15rem;
-    height: 9rem;
-    font-size: 1rem;
-    margin: 7rem;
+    align-items: center;
+    width: 100%;
+    height: 40%;
     
 
-    /* padding: 1rem;
-    border: 1px solid #000;
-    border-radius: 0.5rem;
-    text-align: center; */
-   
+    aside{
+        width: 20%;
+        height: 49vh;
+        border: 1px solid #000;
+        padding-bottom: 1rem;
+        
+        #pro{
+            margin-left: .7rem;
+        }
+        li{
+            list-style: none;
+            border-bottom: 1px solid #000;
+            padding: .7rem;
+        }
+    }
+
+    section {
+        width: 80%;
+        display: flex;
+        height: 49vh;
+
+        #curses{
+            padding:  .7rem;
+            
+        }
+
+        article{
+            border: 1px solid #000 ;
+
+            .work {
+                padding: 1rem;
+            }
+
+            hr{
+                border: 1px solid #000;
+                width: 100%;
+            }
+        }
+
+        .educ {
+            padding: 1rem;
+
+            .h22 {
+                margin-top: -1rem;
+            }
+
+        }
+
+        li{
+            list-style: none;
+        }
+    }
 }
 
-#texx{
+
+footer{
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 6rem;
+    .q{
+        color: rgb(187, 172, 172);
+        display: flex;
+        justify-content: flex-start;
+        padding-top: 1rem;
+    }
+    
+}
+footer>div{
+    border: 3px solid #000;
+    margin: 3rem;
+    padding: 2rem;
+    border-radius: 2rem;
+    width: 15rem;
+}
+
+h4{
+    display: flex;
+    justify-content: center;
     font-size: 1.3rem;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    margin-top: 15px;
+    padding-bottom: 3rem;
 }
 
-.q{
-    font-size: 15px;
-    color: silver;
+a{
+    text-decoration: none;
 }
 .azul{
     color: blue;
+}
+.b{
+    border: none;
+    
+}
+.h2{
+    margin-left: .9rem;
 }
