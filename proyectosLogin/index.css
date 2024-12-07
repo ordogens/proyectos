@@ -13,22 +13,28 @@ body{
     background: url('/proyectosLogin/paisajes.jpg');
 }
 
-/* #cabezera{
-    background-color: red;
+#cabezera{
+    /* background-color: red; */
+    padding-top:1rem ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     
-} */
+}
 
 main{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
     /* border: 3px solid #ada9a9; */
     box-shadow: 0px 0px 4px gray;
     border-radius: .5rem;
     background-color: rgba(255,255,255,0.3);
-    height: fit-content;
-    width: 46vh;
+    height: 25rem;
+    width: 48vh;
+
     
 
     form{
@@ -67,39 +73,77 @@ main{
             font-size: 1rem;
             cursor: pointer;
             border: none;
+            transition: all .7s ease-in-out;
+
         }
     }
 
     #abajo{
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         flex-direction: column;
         /* background-color: red; */
-        margin: 1rem;
+        margin-bottom: 5rem;
+        margin-top: 1rem;
 
         #a{
             display: flex;
-            justify-content: center;
-            align-items: center;
+            justify-content: space-between;
             width: 100%;
-            
+            margin-top: 1rem;
         }
+    }
+
+    img:hover{
+    box-shadow: 0px 0px 8px #000;
+    width: 2.5rem;
+    margin: 0;
+    
+
     }
 }
 img{
-    margin-left: 1.5rem;
     display: flex;
+    justify-content: space-around;
     width: 2rem;
-    margin-top: 1rem;
-    border-radius: 1rem;
+    border-radius: 50%;
+    transition: all .5s ease-in-out;
+
 }
 
 h5{
-    margin: .7rem;
+    margin-top: 6rem;
+    position: fixed;
+    
 }
 
 a{
     text-decoration: none;
     color: blue;
+}
+
+
+@keyframes invertirColores {
+    0% {
+        background: rgb(255, 0, 232);
+        background: linear-gradient(90deg, rgba(255, 0, 232, 1) 0%, rgba(69, 252, 235, 1) 100%);
+    }
+
+    50% {
+        background: rgb(255,0,232);
+        background: linear-gradient(270deg, rgba(255,0,232,1) 0%, rgba(69,252,235,1) 100%);
+    }
+    100% {
+        background: rgb(255,0,232);
+        background: linear-gradient(270deg, rgba(255,0,232,1) 0%, rgba(69,252,235,1) 100%);
+    }
+}
+
+.button:hover {
+    animation: invertirColores 1s both ;
+    box-shadow: 0px 0px 8px;
+    color: black;
+    font-size: 1.1rem;
+    width: 18rem;
 }

@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+    
+    nav {
+        display: flex;
+        align-items: center;
+
+    }
+    
+    #cabecera{
+        height: 3rem;
+        margin-right: 5rem;
+    }
+}
+
+main {
+    
+        aside{
+            border: 1px solid #000;
+            background-color: red; 
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-start;
+            flex-direction: column;
+            width: 13rem;
+        }
+
+        li{
+            list-style: none;
+        }
+
+        .firstS{
+            display: flex;
+            flex-direction: row-reverse;
+        }
+}
+
+
+
+body{
+    margin: .5rem 18rem;
+}
+
+h2{
+    margin: 1rem 0;
+}
+p{
+    margin: 1rem;
+}
+.finalP{
+    margin: .7rem 0;
+}
+.letraPeq{
+    margin: .7rem 0;
+    font-size: .9rem;
+}
+table{
+    margin: 1rem;
+    border: 1px solid #000;
+   
+}
+
+#final{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background: blue; */
+    
+    .p-abajo{
+        
+        font-size: 90%;
+        font-weight: bold;
+        color: #000080;
+        margin: .2rem;
+        /* background-color: red; */
+    }
+}
+
