@@ -1,0 +1,46 @@
+*{
+        margin: 0;
+    padding: 0;
+        box-sizing: border-box;
+}
+
+body{
+    background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(128,167,213,1) 100%);
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    div{
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+        padding: 2rem;
+        /* margin: 14rem; */
+        border-radius: 1rem;
+        width: 100%;
+    } 
+}
+
+p{
+    font-size: 35px;
+    font-family: Arial, sans-serif;
+    white-space: nowrap; /*Evita que el texto se divida en varias líneas */
+    overflow: hidden; /* Esconde el texto que no se ha mostrado aún */
+    display: inline-block;
+    width: 0; /* Empieza con el ancho 0 */
+    text-align: start;
+    animation: typing 5s steps(40) 1s forwards, blink 0.75s step-end infinite; /* Animación de escritura y parpadeo */
+}
+
+@keyframes typing {
+    0% {
+    width: 0;
+}
+    100% {
+    width: 100%;
+    }
+}
